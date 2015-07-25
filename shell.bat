@@ -1,7 +1,7 @@
 @echo off
 :loop
 COLOR 02
-echo =========== [PEAR] www.pearprogrammers.com ===========
+echo =========== [BCSims] www.bcsims.ca ===========
 php app/console --shell
 cls
 goto loop
