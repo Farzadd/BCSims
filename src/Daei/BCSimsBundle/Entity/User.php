@@ -13,7 +13,7 @@ use Symfony\Component\Security\Core\User\AdvancedUserInterface;
  * User
  *
  * @ORM\Entity
- * @ORM\Table(name="whobids_users")
+ * @ORM\Table(name="bcsims_users")
  */
 class User extends BaseUser
 {
@@ -29,14 +29,14 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="first_name", type="string", length=25, nullable=false)
+     * @ORM\Column(name="first_name", type="string", length=25, nullable=true)
      */
     private $firstName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="last_name", type="string", length=25, nullable=false)
+     * @ORM\Column(name="last_name", type="string", length=25, nullable=true)
      */
     private $lastName;
 
@@ -50,14 +50,7 @@ class User extends BaseUser
     /**
      * @var integer
      *
-     * @ORM\Column(name="failed_attempts", type="smallint", nullable=true)
-     */
-    private $failedAttempts;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="created", type="integer", nullable=false)
+     * @ORM\Column(name="created", type="integer", nullable=true)
      */
     private $created;
 }
